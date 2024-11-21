@@ -1,0 +1,86 @@
+button {outline: none;}
+
+
+body {height: 100%; width: 100%; margin: 0;}
+
+
+/* Khung game */
+#container {position: relative; height: 480px; width: 350px; border: 1px solid #ccc; background: url('https://repository-images.githubusercontent.com/336477362/31ce0a80-6893-11eb-8962-bf96a6ebc9e1'); overflow: hidden; margin: 80px auto;}
+
+
+/* Con chim */
+#bird {position: absolute; background: url('https://scontent.fsgn2-9.fna.fbcdn.net/v/t1.15752-9/462546075_548553061470792_4550785841153231688_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFJukU3YJOx1Ovh0wHjb9EQIZhtj_HuCoghmG2P8e4KiCiSOigxgubF7XId5PzDeD7OWtVWfcDWnHSMXLyHbeOK&_nc_ohc=xi0j2ez7jgcQ7kNvgHG67lD&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&oh=03_Q7cD1QFqkDBdS6NgMxEo_IkR9RFaePXlexV1zJOmZz0-TR91YA&oe=675E4B95'); height: 42px; width: 65px; background-size: contain; background-repeat: no-repeat; top: 20%; left: 15%;}
+
+
+/* Ống nước */
+.pole {
+    position: absolute;
+    height: 170px;
+    width: 60px;
+    background-color: #84bcf9;
+    right: -64px;
+    border: 2px solid #000;
+    border-style:  1px dashed;
+    box-shadow: 0 0 10px 5px rgba(32, 64, 113, 0.8);
+}
+/* Ống trên */
+#pole_1 {top: 0; border-top: none;}
+
+
+/* Ống dưới */
+#pole_2 {bottom: 0; border-bottom: none;}
+
+
+/* Điểm */
+#score {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #76edf3;
+}
+
+
+
+
+/* Nút chơi lại */
+#restart_btn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #b5deff;
+    color: #555;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #f5f5f5;
+    padding: 2px;
+}
+
+
+/* Nút chơi game */
+#play_btn {
+    font-family: monospace;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    color: #555;}
+
+/*Hiển thị level*/
+#level {
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #555;
+}
